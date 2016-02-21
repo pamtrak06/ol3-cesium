@@ -9,4 +9,11 @@ RUN apt-get install -y nodejs
 RUN git clone --recursive https://github.com/openlayers/ol3-cesium.git
 RUN cd ol3-cesium; make dist
 
-EXPOSE 80 
+WORKDIR /ol3-cesium
+
+ADD run.sh /
+RUN chmod a+x /run.sh 
+
+CMD [ "bash", "-c", "/run.sh" ]
+
+EXPOSE 4000
