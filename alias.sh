@@ -7,3 +7,4 @@ for s in $scripts; do
   alias ed${prefix}${base%.sh}="vi $curdir/$base"
   #unalias d${prefix}${s%.sh}
 done
+alias
