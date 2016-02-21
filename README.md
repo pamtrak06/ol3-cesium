@@ -22,7 +22,7 @@ create alias with script alias (all sh scripts are prefixed by d[basename of cur
 - exec.sh  => alias dol3-cesiumexec   => without parameter, enter in a container, with param., execute param.
 - copy.sh  => alias dol3-cesiumcopy   => copy a file from container to host or from host to container
 
-To activae alias
+To activate alias
 ```
 $ source alias.sh
 ```
