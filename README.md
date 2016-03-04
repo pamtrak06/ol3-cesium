@@ -2,6 +2,9 @@
 ol3-cesium is OpenLayers with Cesium integration library.
 See [ol3-cesium](http://openlayers.org/ol3-cesium/)
 
+For easy use of docker command, try [edocker](https://github.com/pamtrak06/edocker).
+Create your edocker.cfg configuration file (parameters for most used docker commands ) and then use edocker<command> in any docker working project container those configuration file !
+
 # How to use this image
 
 ## Build a local image
