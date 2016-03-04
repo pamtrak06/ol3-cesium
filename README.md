@@ -14,54 +14,16 @@ docker build -t pamtrak06/ol3-cesium:latest build
 
 ## Run container
 
-configure script config.sh : set curdir to absolute current path instead of curdir=.
-create alias with script alias (all sh scripts are prefixed by d[basename of current folder][root script name]), examples for current directory ol3-cesium:
-- build.sh => alias dol3-cesiumbuild  => build image
-- run.sh   => alias dol3-cesiumrun    => run a container
-- rm.sh    => alias dol3-cesiumrm     => remove all ol3-cesium container
-- exec.sh  => alias dol3-cesiumexec   => without parameter, enter in a container, with param., execute param.
-- copy.sh  => alias dol3-cesiumcopy   => copy a file from container to host or from host to container
-
-To activate alias
-```
-$ source alias.sh
-```
-
-Create a running container
-```
-$ ./run.sh
-```
-or
-```
-$ dol3-cesiumrun
-```
-or
 ```
 $ docker run -dt --name "<container name>" -P pamtrak06/ol3-cesium:latest
 ```
 
 Open a terminal session on a running container
 ```
-$ ./exec.sh
-```
-or
-```
-$ dol3-cesiumexec
-```
-or
-```
 $ docker run -it "<container name>" bash
 ```
 
 Execute command on a running container
-```
-$ ./exec.sh "ps -ef"
-```
-or
-```
-$ dol3-cesiumexec "ps -ef"
-```
-or
 ```
 $ docker run -it "<container name>" bash -c "ps -ef"
 ```
